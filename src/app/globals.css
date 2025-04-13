@@ -12,3 +12,8 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* styles/globals.css or your global CSS file */
+[data-nextjs-dev-overlay] {
+  display: none !important;
+}

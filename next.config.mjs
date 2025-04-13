@@ -1,4 +1,15 @@
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {};
+
+// export default nextConfig;
+
+// next.config.js
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    reactStrictMode: true,
+    devIndicators: {
+        buildActivity: false,
+    },
+}
 
 export default nextConfig;
