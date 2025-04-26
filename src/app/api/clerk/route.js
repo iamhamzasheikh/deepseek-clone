@@ -56,7 +56,7 @@ import { Webhook } from "svix";
 import connectDB from "../../../app/Config/db.js";
 import User from '../../../app/Models/User.js'
 import { headers } from "next/headers";
-import { NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 
 export async function POST(req) {
     try {
@@ -78,6 +78,7 @@ export async function POST(req) {
             _id: data.id,
             email: data.email_addresses[0].email_address,
             name: `${data.first_name} ${data.last_name}`,
+            password: data.password,
             image: data.image_url,
         };
 
