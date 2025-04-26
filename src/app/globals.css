@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4d6bfe;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* styles/globals.css or your global CSS file */
+[data-nextjs-dev-overlay] {
+  display: none !important;
+}
