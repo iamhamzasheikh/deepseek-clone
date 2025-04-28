@@ -110,7 +110,7 @@ export const AppContextProvider = ({ children }) => {
 
     const value = {
         user,
-        chat, setChats,
+        chats, setChats,
         selectedChat, setSelectedChat,
         fetchUsersChats,
         createNewChat,
